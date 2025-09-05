@@ -7,3 +7,4 @@ test("renders the text 'Hello World' somewhere", () => {
     const texts = screen.getAllByText(/Hello World/);
     expect(texts.length).toBeGreaterThanOrEqual(1);
 });
+// hello world
