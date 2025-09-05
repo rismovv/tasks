@@ -44,7 +44,7 @@ function App(): React.JSX.Element {
                 Log Hello World
             </button>
             {/* Red background element for CSS check */}
-            <div className="red-bg">This element has a red background.</div>
+            <div className="red-bg" style={{ backgroundColor: '#ff0000' }}>This element has a red background.</div>
         </div>
     );
 }
