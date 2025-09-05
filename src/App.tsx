@@ -24,7 +24,6 @@ function App(): React.JSX.Element {
             {/* Header 1 */}
             <header className="App-header">
                 <h1>UD CISC275 with React Hooks and TypeScript</h1>
-                <h2>Welcome to the Hello World Demo</h2>
             </header>
             {/* Image with alt text */}
             <img
@@ -45,9 +44,7 @@ function App(): React.JSX.Element {
                 Log Hello World
             </button>
             {/* Red background element for CSS check */}
-            <div className="red-bg" style={{ marginTop: 20, padding: 10 }}>
-                This element has a red background.
-            </div>
+            <div className="red-bg">This element has a red background.</div>
         </div>
     );
 }
