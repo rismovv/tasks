@@ -15,14 +15,14 @@ export function fahrenheitToCelius(temperature: number): number {
 export function add3(first: number, second: number, third: number): number {
     if (first < 0) {
         first = 0;
-    } else if (second < 0) {
+    }
+    if (second < 0) {
         second = 0;
-    } else if (third < 0) {
+    }
+    if (third < 0) {
         third = 0;
     }
-    const sum = first + second + third;
-
-    return sum;
+    return first + second + third;
 }
 
 /**
