@@ -5,7 +5,13 @@ export function Counter() {
     const [value, setValue] = useState<number>(0);
     return (
         <span>
-            <Button onClick={() => setValue(value + 1)}>Add One</Button>
+            <Button
+                onClick={() => {
+                    setValue(value + 1);
+                }}
+            >
+                Add One
+            </Button>
             to {value}.
         </span>
     );
