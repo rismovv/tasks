@@ -1,5 +1,6 @@
 import React, { act } from "react";
 import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
 import { Counter } from "./Counter";
 
 describe("Counter Component tests", () => {
