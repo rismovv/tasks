@@ -6,6 +6,10 @@ import { StartAttempt } from "./components/StartAttempt";
 import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): React.JSX.Element {
     // Bootstrap CDN for demo purposes
@@ -50,7 +54,17 @@ function App(): React.JSX.Element {
                 Log Hello World
             </button>
             {/* Red background element for CSS check */}
-            <div className="red-bg" style={{ backgroundColor: '#ff0000' }}>This element has a red background.</div>
+            <div className="red-bg" style={{ backgroundColor: "#ff0000" }}>
+                This element has a red background.
+            </div>
+            <hr></hr>
+            <DoubleHalf></DoubleHalf>
+            <hr></hr>
+            <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
+            <hr></hr>
+            <ShoveBox></ShoveBox>
             <hr></hr>
             <Counter></Counter>
             <hr />
