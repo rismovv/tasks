@@ -15,7 +15,9 @@ export function MultipleChoiceQuestion({
             <div>
                 <select
                     value={selectedChoice}
-                    onChange={(e) => setSelectedChoice(e.target.value)}
+                    onChange={(e) => {
+                        setSelectedChoice(e.target.value);
+                    }}
                 >
                     {options.map((option) => (
                         <option key={option} value={option}>
