@@ -36,7 +36,7 @@ export function ChangeColor(): React.JSX.Element {
             <div
                 data-testid="colored-box"
                 style={{
-                    backgroundColor: chosenColor.toLowerCase(),
+                    backgroundColor: chosenColor,
                     color:
                         chosenColor.toLowerCase() === "yellow" ?
                             "black"

@@ -8,41 +8,44 @@ export function EditMode(): React.JSX.Element {
     return (
         <div>
             <h3>Edit Mode</h3>
-            <div>
-                <label>
-                    Edit Mode:
-                    <input
-                        type="checkbox"
-                        checked={isEditMode}
-                        onChange={(e) => {
-                            setIsEditMode(e.target.checked);
-                        }}
-                    />
+            <div className="form-check form-switch">
+                <input
+                    className="form-check-input"
+                    type="checkbox"
+                    checked={isEditMode}
+                    onChange={(e) => {
+                        setIsEditMode(e.target.checked);
+                    }}
+                />
+                <label className="form-check-label">
+                    Edit Mode
                 </label>
             </div>
             {isEditMode ?
                 <div>
-                    <div>
-                        <label>
+                    <div className="mb-3">
+                        <label className="form-label">
                             Name:
-                            <input
-                                type="text"
-                                value={userName}
-                                onChange={(e) => {
-                                    setUserName(e.target.value);
-                                }}
-                            />
                         </label>
+                        <input
+                            className="form-control"
+                            type="text"
+                            value={userName}
+                            onChange={(e) => {
+                                setUserName(e.target.value);
+                            }}
+                        />
                     </div>
-                    <div>
-                        <label>
-                            <input
-                                type="checkbox"
-                                checked={isStudent}
-                                onChange={(e) => {
-                                    setIsStudent(e.target.checked);
-                                }}
-                            />
+                    <div className="form-check">
+                        <input
+                            className="form-check-input"
+                            type="checkbox"
+                            checked={isStudent}
+                            onChange={(e) => {
+                                setIsStudent(e.target.checked);
+                            }}
+                        />
+                        <label className="form-check-label">
                             Student
                         </label>
                     </div>
