@@ -10,6 +10,7 @@ export function EditMode(): React.JSX.Element {
             <h3>Edit Mode</h3>
             <div className="form-check form-switch">
                 <input
+                    id="edit-mode-checkbox"
                     className="form-check-input"
                     type="checkbox"
                     checked={isEditMode}
@@ -17,17 +18,18 @@ export function EditMode(): React.JSX.Element {
                         setIsEditMode(e.target.checked);
                     }}
                 />
-                <label className="form-check-label">
+                <label className="form-check-label" htmlFor="edit-mode-checkbox">
                     Edit Mode
                 </label>
             </div>
             {isEditMode ?
                 <div>
                     <div className="mb-3">
-                        <label className="form-label">
+                        <label className="form-label" htmlFor="name-input">
                             Name:
                         </label>
                         <input
+                            id="name-input"
                             className="form-control"
                             type="text"
                             value={userName}
@@ -38,6 +40,7 @@ export function EditMode(): React.JSX.Element {
                     </div>
                     <div className="form-check">
                         <input
+                            id="student-checkbox"
                             className="form-check-input"
                             type="checkbox"
                             checked={isStudent}
@@ -45,7 +48,7 @@ export function EditMode(): React.JSX.Element {
                                 setIsStudent(e.target.checked);
                             }}
                         />
-                        <label className="form-check-label">
+                        <label className="form-check-label" htmlFor="student-checkbox">
                             Student
                         </label>
                     </div>
