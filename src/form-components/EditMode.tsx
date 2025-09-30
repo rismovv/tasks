@@ -14,6 +14,7 @@ export function EditMode(): React.JSX.Element {
                     className="form-check-input"
                     type="checkbox"
                     checked={isEditMode}
+                    aria-label="Edit Mode"
                     onChange={(e) => {
                         setIsEditMode(e.target.checked);
                     }}
@@ -44,6 +45,7 @@ export function EditMode(): React.JSX.Element {
                             className="form-check-input"
                             type="checkbox"
                             checked={isStudent}
+                            aria-label="Student"
                             onChange={(e) => {
                                 setIsStudent(e.target.checked);
                             }}
